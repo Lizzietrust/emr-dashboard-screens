@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMR DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #current {
+            background-color: #F2F2F2;
+            border-radius: 15px;
+        }
+
+        .sidebar.close #current {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <div class="topbar">
+                <img src="./images/medbury-logo.png" alt="" class="main-logo">
+                <img src="./images/cut-logo.png" alt="" class="cut-logo">
+            </div>
+            <div class="bar">
+                <div class="bar-items">
+                    <a href="index.html" class="bar-item">
+                        <img src="./images/white-dashboard.png" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="location.html" class="bar-item">
+                        <img src="./images/location-icon.png" alt="">
+                        <p>Locations</p>
+                    </a>
+                    <a href="exercises.html" class="bar-item" id="current">
+                        <img src="./images/ontology.png" alt="">
+                        <p style="color: #001A57;">Exercises</p>
+                    </a>
+                    <a href="information-hub.html" class="bar-item">
+                        <img src="./images/information.png" alt="">
+                        <p>Information Hub</p>
+                    </a>
+                    <a href="staff.html" class="bar-item">
+                        <img src="./images/profile2user.png" alt="">
+                        <p>Staff</p>
+                    </a>
+                    <a href="booking.html" class="bar-item">
+                        <img src="./images/booking.png" alt="">
+                        <p>Booking</p>
+                        <img src="./images/dropdown.png" alt="" class="dropdown">
+                        <div class="number">10</div>
+                    </a>
+                    <a href="report.html" class="bar-item">
+                        <img src="./images/report.png" alt="">
+                        <p>Report</p>
+                        <img src="./images/dropdown.png" alt="" class="dropdown">
+                    </a>
+                    <a href="update-password.html" class="bar-item">
+                        <img src="./images/lock.png" alt="">
+                        <p>Update Password</p>
+                    </a>
+                    <a href="feedback.html" class="bar-item" >
+                        <img src="./images/messages.png" alt="">
+                        <p>Send Feedbacks</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="top-main">
+                <img src="./images/hamburgermenu.png" alt="" class="hamburgermenu">
+                <div class="right-top">
+                    <img src="./images/profile.png" alt="" class="profile">
+                    <p>Nestle Agbara Factory</p>
+                    <img src="./images/dark-dropdown.png" alt="">
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="currentexercise-page">
+                    <div class="dashboard-page">
+                        <a href="index.html">Dashboard</a>
+                    </div>
+                    <div class="exercise-page">
+                        <a href="exercises.html">Exercise</a>
+                    </div>
+                </div>
+                <table cellspacing="0" class="exercises-table">
+                    <thead>
+                        <tr>
+                            <td>S/N</td>
+                            <td>
+                                <span>Name </span>
+                                <img src="./images/Frame 33.png" alt="">
+                            </td>
+                            <td>
+                                <span>Organization </span>
+                                <img src="./images/Frame 33.png" alt="">
+                            </td>
+                            <td>
+                                <span>Created on </span>
+                                <img src="./images/Frame 33.png" alt="">
+                            </td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Shelf Drilling 19</td>
+                            <td>
+                                <div>Shelf Drilling Nigeria imited</div>  
+                            </td>
+                            <td>
+                                <div>Wed, Jul 10, 2019 11:50 AM</div>
+                            </td>
+                            <td>
+                                <button class="btn-view">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let hamburger = document.querySelector(".hamburgermenu");
+        let main = document.querySelector(".main");
+
+        hamburger.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            main.classList.toggle("spread");
+        });
+
+        
+        
+    </script>
+</body>
+</html>

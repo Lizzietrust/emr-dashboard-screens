@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMR DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #current {
+            background-color: #F2F2F2;
+            border-radius: 15px;
+        }
+
+        .sidebar.close #current {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <div class="topbar">
+                <img src="./images/medbury-logo.png" alt="" class="main-logo">
+                <img src="./images/cut-logo.png" alt="" class="cut-logo">
+            </div>
+            <div class="bar">
+                <h1>MENU</h1>
+                <div class="bar-items">
+                    <a href="index.html" class="bar-item">
+                        <img src="./images/white-dashboard.png" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="location.html" class="bar-item">
+                        <img src="./images/location-icon.png" alt="">
+                        <p>Locations</p>
+                    </a>
+                    <a href="information-hub.html" class="bar-item">
+                        <img src="./images/information.png" alt="">
+                        <p>Information Hub</p>
+                    </a>
+                    <a href="staff.html" class="bar-item">
+                        <img src="./images/profile2user.png" alt="">
+                        <p>Staff</p>
+                    </a>
+                    <a href="booking.html" class="bar-item" id="current">
+                        <img src="./images/dark-booking.png" alt="">
+                        <p style="color: #001A57;">Booking</p>
+                        <img src="./images/blue-dropdown.png" alt="" class="dropdown">
+                        <div class="number">10</div>
+                    </a>
+                    <a href="report.html" class="bar-item">
+                        <img src="./images/report.png" alt="">
+                        <p>Report</p>
+                        <img src="./images/dropdown.png" alt="" class="dropdown">
+                    </a>
+                    <a href="update-password.html" class="bar-item">
+                        <img src="./images/lock.png" alt="">
+                        <p>Update Password</p>
+                    </a>
+                    <a href="feedback.html" class="bar-item" >
+                        <img src="./images/messages.png" alt="">
+                        <p>Send Feedbacks</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="top-main">
+                <img src="./images/hamburgermenu.png" alt="" class="hamburgermenu">
+                <div class="right-top">
+                    <img src="./images/profile.png" alt="" class="profile">
+                    <p>Nestle Agbara Factory</p>
+                    <img src="./images/dark-dropdown.png" alt="">
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="page-print">
+                    <div class="currentreport-page">
+                        <div class="dashboard-page">
+                            <a href="index.html">Dashboard</a>
+                        </div>
+                        <div class="report-page">
+                            <a href="report.html">Create Booking</a>
+                        </div>
+                    </div>
+                    <button class="download-format">
+                        <img src="./images/exportcurve.png" alt="">
+                        Download Format
+                    </button>
+                </div>
+                <div class="booking-headtext">
+                    Select the type of booking you are looking to make, you can book an individual or a group of people with the Book a Staff tab. To use the Bulk upload Booking you need to first download the upload format.
+                </div>
+                <div class="book-uploadstaff">
+                    <ul class="current-tab">
+                        <li class="current">Book a Staff</li>
+                        <li>Bulk Upload Booking</li>
+                    </ul>
+                    <form action="" class="book-staff">
+                        <div class="radio-btns">
+                            <input type="radio" id="select-staffradio" value="Select Staff">
+                            <label for="Select Staff">Select Staff</label>
+                            <input type="radio" id="add-staffradio" value="Add Staff">
+                            <label for="Add Staff">Add Staff</label>
+                        </div>
+                        <div class="bookstaff-select">
+                            <div class="bookstaff-selectitem">
+                                <label for="">Staff </label>
+                                <select name="" id="">
+                                    <option value="">Select staff</option>
+                                </select>
+                            </div>
+                            <div class="bookstaff-selectitem">
+                                <label for="">Investigation Groups </label>
+                                <select name="" id="">
+                                    <option value="">Select investigation groups</option>
+                                </select>
+                            </div>
+                            <div class="bookstaff-selectitem">
+                                <label for="">Investigations </label>
+                                <select name="" id="">
+                                    <option value="">Select investigation</option>
+                                </select>
+                            </div>
+                            <div class="bookstaff-selectitem">
+                                <label for="">Medbury Location </label>
+                                <select name="" id="">
+                                    <option value="">Select a location</option>
+                                </select>
+                            </div>
+                            <div class="bookstaff-datetime">
+                                <div class="bookstaff-date bookstaff-datetimeitem">
+                                    <label for="">Date of Arrival</label>
+                                    <input type="date" name="" id="">
+                                </div>
+                                <div class="bookstaff-time bookstaff-datetimeitem">
+                                    <label for="">Proposed Time of Arrival</label>
+                                    <select name="" id="">
+                                        <option value="">Select a time slot</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bookstaff-btn">
+                                <button>Book staff</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p>Copyright © 2023 <span>Medbury Medical Services.</span>  All rights reserved.</p>
+                <a href="booking2.html">
+                    <img src="./slide-right.png" alt="">
+                </a>
+            </footer>
+        </section>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let hamburger = document.querySelector(".hamburgermenu");
+        let main = document.querySelector(".main");
+
+        hamburger.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            main.classList.toggle("spread");
+        });
+
+        
+        
+    </script>
+</body>
+</html>

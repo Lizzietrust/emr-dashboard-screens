@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMR DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #current {
+            background-color: #F2F2F2;
+            border-radius: 15px;
+        }
+
+        .sidebar.close #current {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <div class="topbar">
+                <img src="./images/medbury-logo.png" alt="" class="main-logo">
+                <img src="./images/cut-logo.png" alt="" class="cut-logo">
+            </div>
+            <div class="bar">
+                <div class="bar-items">
+                    <a href="index.html" class="bar-item">
+                        <img src="./images/white-dashboard.png" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="location.html" class="bar-item">
+                        <img src="./images/location-icon.png" alt="">
+                        <p>Locations</p>
+                    </a>
+                    <a href="exercises.html" class="bar-item" id="current">
+                        <img src="./images/ontology.png" alt="">
+                        <p style="color: #001A57;">Exercises</p>
+                    </a>
+                    <a href="information-hub.html" class="bar-item">
+                        <img src="./images/information.png" alt="">
+                        <p>Information Hub</p>
+                    </a>
+                    <a href="staff.html" class="bar-item">
+                        <img src="./images/profile2user.png" alt="">
+                        <p>Staff</p>
+                    </a>
+                    <a href="booking.html" class="bar-item">
+                        <img src="./images/booking.png" alt="">
+                        <p>Booking</p>
+                        <img src="./images/dropdown.png" alt="" class="dropdown">
+                        <div class="number">10</div>
+                    </a>
+                    <a href="report.html" class="bar-item">
+                        <img src="./images/report.png" alt="">
+                        <p>Report</p>
+                        <img src="./images/dropdown.png" alt="" class="dropdown">
+                    </a>
+                    <a href="update-password.html" class="bar-item">
+                        <img src="./images/lock.png" alt="">
+                        <p>Update Password</p>
+                    </a>
+                    <a href="feedback.html" class="bar-item" >
+                        <img src="./images/messages.png" alt="">
+                        <p>Send Feedbacks</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="top-main">
+                <img src="./images/hamburgermenu.png" alt="" class="hamburgermenu">
+                <div class="right-top">
+                    <img src="./images/profile.png" alt="" class="profile">
+                    <p>Nestle Agbara Factory</p>
+                    <img src="./images/dark-dropdown.png" alt="">
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="current-exercise">
+                    <div class="dashboard-page">
+                        <a href="index.html">Dashboard</a>
+                    </div>
+                    <div class="staff-page">
+                        <a href="exercises.html">Exercise</a>
+                    </div>
+                    <div class="staff2-page">
+                        <a href="exercises2.html">SHELF DRILLING 19 Summary</a>
+                    </div>
+                </div>
+                <div class="other-exercisestab">
+                    <p class="other-exercisestabtext">Clinic Exercise</p>
+                    <div class="tab-number">
+                        <div class="tabLeft">
+                            <h4>SHELF DRILLING 19</h4>
+                            <p>Date: 2022-04-16</p>
+                        </div>
+                        <div class="tabMiddle">
+                            <h5>Organization</h5>
+                            <p>Shelf Drilling Nigeria Limited Next Invoice</p>    
+                        </div>
+                        <div class="tabRight">Balance: ₦0</div>
+                    </div>
+                </div>
+                <div class="totalexercise-tabs">
+                    <div class="tab">
+                        <p>Total Visitation Schedules</p>
+                        <div class="tab-number">85</div>
+                    </div>
+                    <div class="tab">
+                        <p>Total Completed Visitation Schedules</p>
+                        <div class="tab-number">0</div>
+                    </div>
+                    <div class="tab">
+                        <p>Patients</p>
+                        <div class="tab-number">85</div>
+                    </div>
+                </div>
+                <div class="totalamount-tabs">
+                    <div class="tab">
+                        <p>Total Invoice Amount</p>
+                        <div class="tab-number">₦0.00</div>
+                    </div>
+                    <div class="tab">
+                        <p>Total Unpaid invoice</p>
+                        <div class="tab-number">₦0.00</div>
+                    </div>
+                    <div class="tab">
+                        <p>Total Paid Amount</p>
+                        <div class="tab-number">₦0.00</div>
+                    </div>
+                    <div class="tab">
+                        <p>Total Due Amount</p>
+                        <div class="tab-number">₦0.00</div>
+                    </div>
+                </div>
+                <ul class="current-tab">
+                    <li>Clinic Visitation History</li>
+                    <li>Invoice</li>
+                    <li class="current">Transaction History</li>
+                </ul>
+                <div class="project-table" style="margin-top: 30px;">
+                    <table cellspacing="0" class="certificate-table">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <span>Organization</span>
+                                    <img src="./images/Frame 33.png" alt="">
+                                </td>
+                                <td>
+                                    <span>Note </span>
+                                    <img src="./images/Frame 33.png" alt="">
+                                </td>
+                                <td>
+                                    <span>Type </span>
+                                    <img src="./images/Frame 33.png" alt="">
+                                </td>
+                                <td>
+                                    <span>Amount </span>
+                                    <img src="./images/Frame 33.png" alt="">
+                                </td>
+                                <td>
+                                    <span>Created On </span>
+                                    <img src="./images/Frame 33.png" alt="">
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="credit-tag">Credit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="debit-tag">Debit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="debit-tag">Debit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="debit-tag">Debit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="credit-tag">Credit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="credit-tag">Credit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                            <tr>
+                                <td>Kelvin Enterprise</td>
+                                <td>Part invoice payment</td>
+                                <td>
+                                    <div class="credit-tag">Credit</div>
+                                </td>
+                                <td>₦30,000</td>
+                                <td>6th of June 2023 03:12pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="show-entries">
+                        <div class="prev-next">
+                            <span class="prev-text">Previous</span>
+                            <div class="prev">1</div>
+                            <div class="next">2</div>
+                            <div class="next">3</div>
+                            <div class="next">4</div>
+                            <span>Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let hamburger = document.querySelector(".hamburgermenu");
+        let main = document.querySelector(".main");
+
+        hamburger.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            main.classList.toggle("spread");
+        });
+
+        
+        
+    </script>
+</body>
+</html>
